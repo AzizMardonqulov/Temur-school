@@ -959,6 +959,7 @@ input{
     height: 100vh;
     position: fixed;
     z-index: 500;
+    gap: 2rem;
     top: 0vh;
     background: linear-gradient(to right , #04020ed4 , #3331c8d1);
 }
