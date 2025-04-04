@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Port+Lligat+Sans&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Yatra+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    font-family: Epilogue, sans-serif;
+}
+li{
+    list-style: none;
+}
+input{
+    outline: none;
+    padding-left: 1rem;
+}
+.test{
+    width: 100%;
+    height:60VH;
+    display: flex;
+    flex-direction: column;
+    padding: 2REM 4REM;
+    position: relative;
+    background-size: cover;
+    background-position: bottom;
+    background-image: url(https://cdn.prod.website-files.com/64184874f371bc785f2236eb/641ac554e2a34f2c6a6284fb_Dark%20Background.png);
+}
+.test-lable{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 1rem;
+    justify-content:space-between;
+}
+.test-lable-1{
+    color: #FFF;
+}
+.test-lable-block{
+    color: #FFF;
+    cursor: pointer;
+}
+.test-lable *{
+    text-align: center;
+}
+.hidden-lable{
+    display: none;
+}
+.test-in-lable-1{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 48px;
+    color: #FFF;
+    padding-left: 3rem;
+    padding-top: 5rem;
+}
+.test-in-lable-1{
+    display: flex;
+    gap: 2rem;
+}
+.test-in-lable-1 ul li{
+    height: 60px;
+    font-size: 48px;
+    position: relative;
+    color: #fff;
+    text-align: start;
+}
+.test-in-lable-1 ul li span::before{
+    content: "";
+    width: 100%;
+    height: 80%;
+    background:#295B58;
+    position: absolute;
+    left: 0;
+    border-left: 5px solid #fff;
+    animation: test-lable 3s steps(10) infinite;
+}
+.test-in-lable-1 ul li:nth-child(3) span::before{
+    animation: test-lable2 3s steps(10) infinite ;
+}
+@keyframes test-lable {
+    20%{
+    }
+     100%{
+         left: 60%;
+     }
+ }
+@keyframes test-lable2 {
+        100%{
+            left: 100%;
+        }
+}
+.test-in-lable-1 ul li{
+    position: relative;
+    top: 0;
+    animation: slice 9s steps(3) infinite;
+}
+.test-in-lable-1 ul{
+    overflow: hidden;
+    width: 350px;
+    height: 60px;
+}
+@keyframes slice {
+    100%{
+        top: -170px;
+    }
+}
+.test-lable-2{
+    color: #535756;
+    margin-top: 10px;
+    margin-bottom: 2rem;
+    font-family: Epilogue, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.8em;  
+}
+
+
+.hidden-lable{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 200;
+    background-color: #000000ad;
+    left: 0;
+    top: -150vh;
+    display: block;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 4rem;
+}
+.close-hidden-lable{
+    color: #fff;
+    width: 100%;
+    margin-left:90%;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Poppins";
+}
+.lable{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hidden-lable-1{
+    color: #9d9c9c;
+    margin-bottom: 0.5rem;
+    font-family: Epilogue, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 0.8em;
+}
+.hidden-lable-2 a{
+    color: #d7d7d7;
+}
+.hidden-lable-2{
+    color: #fff;
+    margin-top: 10px;
+    font-family: Epilogue, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.hidden-lable-3{
+    width: 50%;
+    color:  #9d9c9c;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: Epilogue, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 2em;
+}
+.test-lable-3{
+    color: #fffaff;
+    margin-top: 10px;
+    margin-bottom: 2rem;
+    font-family: Epilogue, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.8em;
+}
+.close-hidden-lable:hover{
+    color: red;
+    cursor: pointer;
+}
+.bottom-button{
+    width: 100%;
+    height: 30vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.open-test{
+    font-size: 20px;
+    cursor: pointer;
+}
+.open-test:active{
+    transform: scale(1.3);
+}
+@media only screen and (max-width:768px) {
+    .test{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+@media only screen and (max-width:670px) {
+    .test-in-lable-1{
+        width: 100%;
+        transform: scale(0.8);
+    }
+}
+@media only screen and (max-width:651px) {
+    .test{
+        display: flex;
+        
+        align-items: center;
+    }
+    .test-in-lable-1{
+        width: 150%;
+        transform: scale(0.6);
+        align-items: center;
+        display: flex;
+        justify-content: start;
+    }
+}
+@media only screen and (max-width:446px) {
+    .test-in-lable-1{
+        width: 180%;
+        transform: scale(0.6);
+    }
+}
+@media only screen and (max-width:376px) {
+    .test-in-lable-1{
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width:362px) {
+    .test-in-lable-1{
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width:700px) {
+    .lable{
+        width: 130%;
+        transform: scale(0.7);
+    }
+}
+@media only screen and (max-width:524px) {
+    .lable{
+        width: 150%;
+        transform: scale(0.6);
+    }
+}
+@media only screen and (max-width:455px) {
+    .lable{
+        width: 195%;
+        transform: scale(0.5);
+    }
+    .close-hidden-lable{
+        font-size: 16px;
+    }
+}
+.test-part{
+    width: 100%;
+    height: 100vh;
+    background-color: #000000da;
+    position: fixed;
+    z-index: 100;
+    top: -150vh;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5REM;
+    padding-bottom: 3rem;
+}
+.close-test{
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    font-size: 1.5rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+.test-part *{
+    color: #d7d7d7;
+}
+.test-part-img{
+    width: 200px;
+    display: flex;
+}
+.test-part-img img{
+    width: 100%;
+}
+.quasion-block li{
+    width: 600px;
+    display: none;
+    flex-direction: column;
+    gap: 0rem;
+}
+.quasion{
+    font-size: 1.8REM;
+    color: #FFF;
+    font-family: "Poppins";
+    font-weight: 600;
+    margin-bottom:1.3rem;
+}
+.obsion{
+    width: fit-content;
+    font-size: 1.5REM;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.obsion-1{
+    cursor: pointer;
+}
+.quasion-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.quasion-buttons div{
+    padding: 20px 20%;
+    text-align: center;
+    font-size: 18px;
+    background-color: #295B58;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.quasion-buttons a{
+    padding: 20px 20%;
+    text-align: center;
+    font-size: 18px;
+    background-color: #295B58;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.quasion-buttons div:first-child{
+    background-color: #535756;
+}
+.min-width{
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.clickButton{
+    width: fit-content;
+    background-color: #295B58;
+}
+@media only screen and (max-width:551px) {
+    .quasion-block{
+        transform: scale(0.8);
+    }
+    .test-part{
+        gap: 0;
+    }
+}
+@media only screen and (max-width:466px) {
+    .quasion-block{
+        transform: scale(0.7);
+    }
+}
+@media only screen and (max-width:384px) {
+    .quasion-block{
+        transform: scale(0.6);
+    }
+}
+.result{
+    width: 100%;
+    height: 100vh;
+    position:fixed;
+    top: -100vh;
+    left: 0;
+    z-index: 100;
+    background-color: #000000cf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.result-block{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background: #295B58;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+h1{
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-size: 40px;
+}
+h4{
+    color: #abc2c0;
+    font-size: 20px;
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 0.5rem;
+}
+h4:last-child{
+    font-size: 20px;
+}
+.result-block a{
+    color: #fff;
+    font-size: 20px;
+}
+.active{
+    display: flex !important;
+}
+.adwers{
+    display: none;
+}
+.loader-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    z-index: 500;
+    top: 0vh;
+    background: linear-gradient(to right , #04020ed4 , #3331c8d1);
+}
+.loder{
+    top: -150vh;
+    animation: loader 2s linear;
+}
+@keyframes loader {
+  0%{
+    top: 0vh;
+  }
+  85%{
+    top: 0;
+  }
+  90%{
+    top: -150vh;
+  }
+} 
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid transparent;
+    border-top: 5px solid #ffffff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    transition: all 0.8s ease;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
