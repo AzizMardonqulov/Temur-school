@@ -20,7 +20,7 @@ input{
     height: fit-content;
     display: flex;
     flex-direction: column;
-    background:linear-gradient(to bottom right , #FFFAF6 10%, #DFFFFE  90%)
+    background:linear-gradient(to bottom right , #FFFAF6 ,  #E0FFFD )
 }
 .navbar{
     width: 100%;
@@ -39,7 +39,7 @@ input{
     margin-top: 10px;
     margin-bottom: 10px;
     font-family: Epilogue, sans-serif;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 500;
     line-height: 1.5em;
     color: #535756;
@@ -74,8 +74,8 @@ input{
     color: #535756;   
 }
 .navbar-left ul li:last-child a{
-    border: 2px solid #387975;
-    background-color: #387975;
+    border: 2px solid #148ac1;
+    background-color: #148ac1;
     color: #FFFAF6;
     text-align: center;
     letter-spacing: .5px;
@@ -90,9 +90,8 @@ input{
     transition: all .3s;
 }
 .navbar-left ul li:last-child:hover a{
-    border: 1px solid #387975;
     background-color: transparent;
-    color: #387975;
+    color: #148ac1;
 }
 .navbar-left ul li:first-child{
     font-size: 20px;
@@ -404,8 +403,8 @@ input{
 }
 
 .baner-img-1:nth-child(1) .square{
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
     border-color: #4CC8EF;
     top: 30%;
     left: -35%;
@@ -413,8 +412,8 @@ input{
     transform: scale(1);
 }
 .baner-img-1:nth-child(2) .square{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-color: #8B5DCE;
     top: -30%;
     left: 40%;
@@ -471,7 +470,7 @@ input{
     width: 55px;
     height: 45px;
     position: absolute;
-    background-color: #387975;
+    background-color: #148ac1;
     background-image: url(https://cdn.prod.website-files.com/64184874f371bc785f2236eb/6419c95c34fcf444a6c951d5_Search.png);
     right: 2%;
     border-radius: 10px;
@@ -486,14 +485,15 @@ input{
 }
 .bac-bottom{
     width: 100%;
-    height: 30vh;
-    background-image: url(./img/baner/bottom-img.png);
-    background-position: top;
+    height: 50vh;
     position: absolute;
-    bottom: -50%;
+    bottom: -47%;
     left: 0;
     z-index: -4;
     transform: rotate(180deg);
+    background-image: url(https://cdn.prod.website-files.com/64184874f371bc785f2236eb/641c2b3c07948b30b57e4bc6_Backgrouns%202%20About%201.png);
+    background-position: top;
+
 }
 .baner-lable{
     justify-content: center;
