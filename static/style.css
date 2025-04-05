@@ -1420,6 +1420,10 @@ input{
     color: #387975; 
 }
 
+.bars > span:hover{
+    cursor: pointer;
+}
+
 @media only screen and (max-width:1240px) {
     .course-block-1{
         width: 45%;

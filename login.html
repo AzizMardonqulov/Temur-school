@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurslar</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./static/kurs.css">
+</head>
+<body>
+    <div class="hader">
+        <div class="navbar">
+            <div class="navbar-logo">
+                <a href="https://temurbek-school.vercel.app/"><img width="100px" style="border-radius: 50%;" src="./static/img/navbar/navbar-logo.png" alt=""></a>
+            </div>
+            <div class="navbar-centr">
+                <ul>
+                    <li><a href="#">Asosiy</a></li>
+                    <li><a href="#course">Kurslar</a></li>
+                    <li><a href="#natijalar">Natijalar</a></li>
+                    <li><a href="#tech">Biz Haqimizda</a></li>
+                    <li><a href="#service">Tadbirlar</a></li>
+                    <li><a href="#imtihon">Imtihonlar</a></li>
+                </ul>
+            </div>
+            <div class="navbar-left">
+                <ul>
+                    <li><a href="/test">Tests</a></li>
+                    <div id="bars" class="bars">
+                        <span></span>
+                    </div>
+                    <li><a href="/log-out">Darsga Yozilish</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="medioNavbar" class="medio-navbar">
+            <div class="navbar-logo">
+                <img width="150px" src="./static/temur_school_logo" alt="">
+            </div>
+            <div class="navbar-centr">
+                <ul>
+                    <li><a href="#">Asosiy</a></li>
+                    <li><a href="#course">Kurslar</a></li>
+                    <li><a href="#natijalar">Natijalar</a></li>
+                    <li><a href="#tech">Biz Haqimizda</a></li>
+                    <li><a href="#service">Tadbirlar</a></li>
+                </ul>
+            </div>
+            <div class="navbar-left">
+                <ul>
+                    <li><a href="/test">Testlar</a></li>
+                    <li><a href="">Darsga Yozilish</a></li>
+                    <li id="close">X</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Content -->
+
+<div class="wrapper-form">
+    <form class=".form">
+        <h1 class="login-sarlavha">Darsga Yozilish</h1>
+        <label for="name" class="label">Ismingiz</label>
+        <input type="text" name="name" placeholder="Ismingizni kiriting" class=".input" required autocomplete="off">
+        <label for="surname" class="label">Familyangiz</label>
+        <input type="text" name="surname" placeholder="Familyangizni kiriting" autocomplete="off" required class=".input">
+        <label for="phone" class="label">Telefon raqamingiz</label>
+        <input type="text" class="input" placeholder="+998 90 100 10 01" required autocomplete="off" name="phone">
+        <label for="choice" class="label">Kursni tanlang</label>
+        <select name="Choice" id="choice" class=".input" required>
+            <option value="Variant 1">GENERAL English</option>
+            <option value="Variant 2">IELTS</option>
+            <option value="Variant 3">MATEMATIKA</option>
+            <option value="Variant 4">RUS-TILI</option>
+            <option value="Variant 5">TOPIK</option>
+            <option value="Variant 6">PREZIDENT MAKTABIGA TAYYORLASH</option>
+          </select>
+
+        <input type="submit" class="input signup" placeholder="Jo'natish">
+    </form>
+</div>
+
+
+
+
+
+    
+
+
+<!-- footer -->
+    <div class="futer">
+        <div class="futer-block">
+            <div class="futer-block-1">
+                <div class="futer-block-1-blog-1">
+                    <div class="futer-block-1-blog-1-img">
+                        <a href="https://aziz-mardonqulov-web.netlify.app/">
+                            <img src="./static/img/futer/1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="futer-block-1-blog-1-lable">
+                        Let’s Find Best <br> Course For You
+                    </div>
+                    <div class="futer-block-1-blog-1-button">
+                        <a href="https://t.me/Shakhobov_Temurbek">Contact Us</a>
+                    </div>
+                </div>
+                <div class="futer-block-1-blog-2">
+                    <div class="futer-nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#course">Courses</a></li>
+                            <li><a href="#tech">About Us</a></li>
+                            <li><a href="#service">Service</a></li>
+                            <li><a href="/test">Test</a></li>
+                        </ul>
+                    </div>
+                    <div class="futer-block-1-blog-2-input">
+                        <div class="futer-lable-1">Subscribe to our newsletter</div>
+                        <div class="futer-1-input">
+                            <input name="Email" type="Email" required placeholder="Email" autocomplete="off"> <a href="https://t.me/TEMURBEK_SCHOOL">Subscribe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="futer-block-2">
+                <div class="futer-block-2-lable-1">
+                    <p>© All rights copy reserved</p>
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+     <script src="app.js"></script>
+</body>
+</html>
