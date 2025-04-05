@@ -6,7 +6,7 @@ bars.addEventListener("click" , function(){
     medioNavbar.style.top="0";
 })
 close.addEventListener("click" , function(){
-    medioNavbar.style.top="-150vh";
+    medioNavbar.style.top="-200vh";
 })
 window.addEventListener("load" , function(){
     loader.classList.add("loder")
